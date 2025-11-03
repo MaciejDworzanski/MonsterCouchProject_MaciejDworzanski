@@ -38,11 +38,6 @@ namespace _Project.Scripts.UI
             OnExitButtonClicked?.Invoke();
         }
 
-        private void OnDisable()
-        {
-            
-        }
-
         public override bool CanBeClosedViaEscapeButton()
         {
             return false;
