@@ -5,8 +5,9 @@ namespace _Project.Scripts.Player
 {
     public class PlayerInput : MonoBehaviour
     {
-        public event Action<Vector2> OnPlayerMove; 
-        private void Update()
+        public event Action<Vector2> OnPlayerMove;
+        
+        private void FixedUpdate()
         {
             HandleMovement();
         }
