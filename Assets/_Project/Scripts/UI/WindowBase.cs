@@ -50,5 +50,10 @@ namespace _Project.Scripts.UI
         {
             return true;
         }
+
+        public virtual bool CanBeClosedViaEscapeButton()
+        {
+            return true;
+        }
     }
 }
