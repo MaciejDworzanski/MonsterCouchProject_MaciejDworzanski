@@ -1,6 +1,7 @@
 using System;
 using _Project.Scripts.Player;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace _Project.Scripts.Enemy
 {
@@ -21,6 +22,7 @@ namespace _Project.Scripts.Enemy
         {
             playerCollisionTrigger = trigger;
             cam = Camera.main;
+            movementSpeed *= Random.Range(0.8f, 1.2f);
         }
 
         private void Update()
