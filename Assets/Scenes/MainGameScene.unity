@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfca8a3ab7344eccbdfe8c267616e52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Enemy.EnemySpawner
-  numberOfEnemiesToSpawn: 5
+  numberOfEnemiesToSpawn: 50
   playerCollisionTrigger: {fileID: 1489408795}
   enemyPrefab: {fileID: 1723021637446376638, guid: 26375c84ab36ca64f85886c1e22ca55e, type: 3}
   positionToSpawnEnemies:
