@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8426119567178115020}
   - component: {fileID: 8418958123833516495}
+  - component: {fileID: 7227063441974014708}
   m_Layer: 0
   m_Name: CheckBox
   m_TagString: Untagged
@@ -64,6 +65,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &7227063441974014708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400940641505005134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01293e6c218d4dc6811078c07bd1daf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.UI.CheckBox
+  CheckBoxButton: {fileID: 4781126206646799488}
+  checkboxButtonText: {fileID: 7545803204622041817}
+  IsOnFromStart: 0
 --- !u!1001 &627099079000549004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79,6 +95,10 @@ PrefabInstance:
     - target: {fileID: 4070798853679371385, guid: 52e4b3acba822664d86afdf1e9e5d708, type: 3}
       propertyPath: m_text
       value: Checkbox 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070798853679371385, guid: 52e4b3acba822664d86afdf1e9e5d708, type: 3}
+      propertyPath: m_fontSize
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6491972014019618806, guid: 52e4b3acba822664d86afdf1e9e5d708, type: 3}
       propertyPath: m_Pivot.x
@@ -188,7 +208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5214107244291666055, guid: 7bc3535e2d21c0a4abd4cca47efb1bb8, type: 3}
       propertyPath: m_fontSize
-      value: 72
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7709647716352188978, guid: 7bc3535e2d21c0a4abd4cca47efb1bb8, type: 3}
       propertyPath: m_Pivot.x
@@ -279,8 +299,30 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bc3535e2d21c0a4abd4cca47efb1bb8, type: 3}
+--- !u!114 &4781126206646799488 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7115078371280010974, guid: 7bc3535e2d21c0a4abd4cca47efb1bb8, type: 3}
+  m_PrefabInstance: {fileID: 2370070846737478238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!224 &5339585947037667436 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7709647716352188978, guid: 7bc3535e2d21c0a4abd4cca47efb1bb8, type: 3}
   m_PrefabInstance: {fileID: 2370070846737478238}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7545803204622041817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5214107244291666055, guid: 7bc3535e2d21c0a4abd4cca47efb1bb8, type: 3}
+  m_PrefabInstance: {fileID: 2370070846737478238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI

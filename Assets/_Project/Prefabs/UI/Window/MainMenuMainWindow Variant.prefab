@@ -293,6 +293,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 5562966191146733214}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 5479540019984977759}
     - target: {fileID: 2546800707625370033, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
       propertyPath: m_text
       value: Settings
@@ -410,6 +422,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 5479540019984977759}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 5356015635838121976}
     - target: {fileID: 2546800707625370033, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
       propertyPath: m_text
       value: Play
@@ -527,6 +551,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 5356015635838121976}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 5562966191146733214}
     - target: {fileID: 2546800707625370033, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
       propertyPath: m_text
       value: Exit

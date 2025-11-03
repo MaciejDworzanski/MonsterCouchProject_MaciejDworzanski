@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using _Project.Scripts.SceneControllers;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace _Project.Scripts.UI
 {
@@ -20,6 +22,23 @@ namespace _Project.Scripts.UI
             WindowBase.OnOpen -= WindowOpen;
             WindowBase.OnClose -= WindowClosed;
             MainMenuInputHandler.OnEscapeClicked -= TryCloseLastWindowWithEscapeButton;
+        }
+
+        private void Update()
+        {
+            MakeSureSomethingIsSelected();
+        }
+
+        private void MakeSureSomethingIsSelected()
+        {
+            if (EventSystem.current.currentSelectedGameObject != null)
+            {
+                return;
+            }
+            if (openWindows.Count == 0)
+                return;
+            var lastWindow = openWindows[^1];
+            lastWindow.SelectDefaultOrLastSelectedButton();
         }
 
         private void WindowClosed(WindowBase window)

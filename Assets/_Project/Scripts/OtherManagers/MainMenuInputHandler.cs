@@ -9,7 +9,8 @@ namespace _Project.Scripts.SceneControllers
         
         private void Update()
         {
-            OnEscapeClicked?.Invoke();
+            if(Input.GetKeyDown(KeyCode.Escape))
+                OnEscapeClicked?.Invoke();
         }
     }
 }

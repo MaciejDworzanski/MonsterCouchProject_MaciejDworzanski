@@ -30,6 +30,7 @@ namespace _Project.Scripts.UI
         {
             if (!CanOpen())
                 return;
+            Debug.Log($"Open window {gameObject.name}");
             content.SetActive(true);
             OnOpen?.Invoke(this);
             SelectDefaultOrLastSelectedButton();
@@ -37,13 +38,15 @@ namespace _Project.Scripts.UI
 
         public void Close()
         {
+            Debug.Log($"Close window {gameObject.name}");
             content.SetActive(false);
             OnClose?.Invoke(this);
         }
 
-        private void SelectDefaultOrLastSelectedButton()
+        public void SelectDefaultOrLastSelectedButton()
         {
             EventSystem.current.SetSelectedGameObject(defaultSelectable.gameObject);
+            Debug.Log($"Selecting {defaultSelectable.gameObject.name}");
         }
 
         protected virtual bool CanOpen()

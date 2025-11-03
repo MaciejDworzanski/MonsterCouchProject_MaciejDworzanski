@@ -36,6 +36,7 @@ namespace _Project.Scripts.UI
 
         private void ToggleState()
         {
+            Debug.Log("Toggle state");
             if(currentState)
                 SetStateToOff();
             else
@@ -58,6 +59,7 @@ namespace _Project.Scripts.UI
 
         private void RefreshState()
         {
+            Debug.Log($"Current state is {currentState}");
             checkboxButtonText.text = currentState ? "X" : " ";
             OnStateChanged?.Invoke(currentState);
         }
