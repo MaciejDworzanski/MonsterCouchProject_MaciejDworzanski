@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using _Project.Scripts.SceneControllers;
 using UnityEngine;
 
 namespace _Project.Scripts.UI
@@ -11,12 +12,14 @@ namespace _Project.Scripts.UI
         {
             WindowBase.OnOpen += WindowOpen;
             WindowBase.OnClose += WindowClosed;
+            MainMenuInputHandler.OnEscapeClicked += TryCloseLastWindowWithEscapeButton;
         }
 
         private void OnDisable()
         {
             WindowBase.OnOpen -= WindowOpen;
             WindowBase.OnClose -= WindowClosed;
+            MainMenuInputHandler.OnEscapeClicked -= TryCloseLastWindowWithEscapeButton;
         }
 
         private void WindowClosed(WindowBase window)
