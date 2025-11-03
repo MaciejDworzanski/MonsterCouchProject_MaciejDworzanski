@@ -33,7 +33,7 @@ namespace _Project.Scripts.UI
             Debug.Log($"Open window {gameObject.name}");
             content.SetActive(true);
             OnOpen?.Invoke(this);
-            SelectDefaultOrLastSelectedButton();
+            SelectDefaultButton();
         }
 
         public void Close()
@@ -43,7 +43,7 @@ namespace _Project.Scripts.UI
             OnClose?.Invoke(this);
         }
 
-        public void SelectDefaultOrLastSelectedButton()
+        public void SelectDefaultButton()
         {
             EventSystem.current.SetSelectedGameObject(defaultSelectable.gameObject);
             Debug.Log($"Selecting {defaultSelectable.gameObject.name}");

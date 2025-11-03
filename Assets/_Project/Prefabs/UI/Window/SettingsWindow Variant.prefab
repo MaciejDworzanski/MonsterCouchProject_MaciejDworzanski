@@ -153,6 +153,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 8204247610818313804}
+    - target: {fileID: 700838869448740840, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 3912430355149515694}
     - target: {fileID: 2546800707625370033, guid: 9f41b4e8706f2244c98bc232d5114237, type: 3}
       propertyPath: m_text
       value: Back
@@ -192,8 +204,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3400940641505005134, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
       propertyPath: m_Name
-      value: CheckBox (1)
+      value: CheckBox 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3516615006654116597, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_text
+      value: Checkbox 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516615006654116597, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781126206646799488, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781126206646799488, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 3912430355149515694}
+    - target: {fileID: 4781126206646799488, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 4060445445097287682}
     - target: {fileID: 5339585947037667436, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -241,6 +273,10 @@ PrefabInstance:
     - target: {fileID: 5957129177225740666, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545803204622041817, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_fontSize
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 8426119567178115020, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
       propertyPath: m_Pivot.x
@@ -332,6 +368,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8426119567178115020, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
   m_PrefabInstance: {fileID: 3711721800926917324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8204247610818313804 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4781126206646799488, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+  m_PrefabInstance: {fileID: 3711721800926917324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &5765011856939693376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -478,6 +525,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckBox
       objectReference: {fileID: 0}
+    - target: {fileID: 3516615006654116597, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781126206646799488, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781126206646799488, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 4060445445097287682}
+    - target: {fileID: 4781126206646799488, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 8204247610818313804}
     - target: {fileID: 5339585947037667436, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -525,6 +588,10 @@ PrefabInstance:
     - target: {fileID: 5957129177225740666, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545803204622041817, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+      propertyPath: m_fontSize
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 8426119567178115020, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
       propertyPath: m_Pivot.x
@@ -616,3 +683,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8426119567178115020, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
   m_PrefabInstance: {fileID: 8363824809307154222}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3912430355149515694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4781126206646799488, guid: 0f3c1d2bd783c984c90c7ba296c5e953, type: 3}
+  m_PrefabInstance: {fileID: 8363824809307154222}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button

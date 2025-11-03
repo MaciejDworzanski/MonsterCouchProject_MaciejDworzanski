@@ -38,12 +38,14 @@ namespace _Project.Scripts.UI
             if (openWindows.Count == 0)
                 return;
             var lastWindow = openWindows[^1];
-            lastWindow.SelectDefaultOrLastSelectedButton();
+            lastWindow.SelectDefaultButton();
         }
 
         private void WindowClosed(WindowBase window)
         {
             openWindows.Remove(window);
+            if(openWindows.Count != 0)
+                openWindows[^1].SelectDefaultButton();
         }
 
         private void WindowOpen(WindowBase window)
