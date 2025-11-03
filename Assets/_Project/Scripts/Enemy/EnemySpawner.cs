@@ -44,6 +44,7 @@ namespace _Project.Scripts.Enemy
             var position = GetPositionToSpawnNextEnemy();
             var newEnemy = Instantiate(enemyPrefab, position, Quaternion.identity, transform);
             newEnemy.Initialize(playerCollisionTrigger);
+            Debug.Log("Spawn enemy");
         }
 
         private Vector3 GetPositionToSpawnNextEnemy()

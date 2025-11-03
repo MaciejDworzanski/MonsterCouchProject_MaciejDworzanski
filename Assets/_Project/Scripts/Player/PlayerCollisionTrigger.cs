@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace _Project.Scripts.Player
 {
@@ -7,7 +6,11 @@ namespace _Project.Scripts.Player
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
-            
+            if (other.TryGetComponent<Enemy.Enemy>(out var enemy))
+            {
+                enemy.CatchEnemy();
+                Debug.Log("Enemy found!");
+            }
         }
     }
 }

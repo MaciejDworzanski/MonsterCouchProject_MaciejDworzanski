@@ -15,6 +15,8 @@ namespace _Project.Scripts.Enemy
 
         private Camera cam;
 
+        private bool wasFound = false;
+
         public void Initialize(PlayerCollisionTrigger trigger)
         {
             playerCollisionTrigger = trigger;
@@ -23,6 +25,8 @@ namespace _Project.Scripts.Enemy
 
         private void Update()
         {
+            if (wasFound)
+                return;
             MoveAwayFromPlayer();
         }
 
@@ -46,6 +50,11 @@ namespace _Project.Scripts.Enemy
 
             pos = cam.ViewportToWorldPoint(viewportPos);
             transform.position = pos;
+        }
+
+        public void CatchEnemy()
+        {
+            wasFound = true;
         }
     }
 }

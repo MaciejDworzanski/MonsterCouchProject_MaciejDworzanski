@@ -8,6 +8,9 @@ namespace _Project.Scripts.Player
         [SerializeField]
         private PlayerInput playerInput;
 
+        [SerializeField]
+        private float playerSpeed = 1.5f;
+
         private Camera cam;
 
         private void OnEnable()
@@ -21,9 +24,9 @@ namespace _Project.Scripts.Player
             playerInput.OnPlayerMove -= PlayerMove;
         }
 
-        private void PlayerMove(Vector2 obj)
+        private void PlayerMove(Vector2 direction)
         {
-
+            transform.position += (Vector3)(playerSpeed * Time.deltaTime * direction);
             KeepInsideCamera();
         }
         
