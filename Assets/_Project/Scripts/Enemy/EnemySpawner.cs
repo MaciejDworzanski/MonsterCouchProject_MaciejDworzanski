@@ -21,14 +21,23 @@ namespace _Project.Scripts.Enemy
 
         private int lastSpawnedEnemyPositionNumber;
 
-        private void OnEnable()
-        {
-            
-        }
+        private Material materialToAddToEnemies;
+
+        [SerializeField]
+        private List<Enemy> enemies;
 
         private void Start()
         {
+            materialToAddToEnemies = Resources.Load<Material>("EnemyMaterial");
             SpawnEnemies();
+        }
+
+        private void Update()
+        {
+            foreach (var enemy in enemies)
+            {
+                enemy.UpdateEnemy();
+            }
         }
 
         private void SpawnEnemies()
@@ -43,8 +52,8 @@ namespace _Project.Scripts.Enemy
         {
             var position = GetPositionToSpawnNextEnemy();
             var newEnemy = Instantiate(enemyPrefab, position, Quaternion.identity, transform);
-            newEnemy.Initialize(playerCollisionTrigger);
-            Debug.Log("Spawn enemy");
+            newEnemy.Initialize(playerCollisionTrigger, materialToAddToEnemies);
+            enemies.Add(newEnemy);
         }
 
         private Vector3 GetPositionToSpawnNextEnemy()

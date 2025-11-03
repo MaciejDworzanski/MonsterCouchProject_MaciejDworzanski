@@ -9,7 +9,6 @@ namespace _Project.Scripts.Player
             if (other.TryGetComponent<Enemy.Enemy>(out var enemy))
             {
                 enemy.CatchEnemy();
-                Debug.Log("Enemy found!");
             }
         }
     }

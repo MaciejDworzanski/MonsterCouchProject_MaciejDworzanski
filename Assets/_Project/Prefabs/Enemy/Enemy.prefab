@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.Scripts.Enemy.Enemy
   movementSpeed: 1.5
+  spriteRenderer: {fileID: 8730438960820703427}
 --- !u!58 &8015416673537084680
 CircleCollider2D:
   m_ObjectHideFlags: 0
